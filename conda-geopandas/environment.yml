@@ -1,0 +1,8 @@
+name: c_geopandas
+channels:
+  - conda-forge
+dependencies:
+  - pandas 
+  - numpy 
+  - geopandas 
+  - openpyxl

@@ -1,0 +1,15 @@
+FROM continuumio/miniconda3
+
+WORKDIR /app
+
+# Create the environment:
+COPY environment.yml .
+RUN conda env create -f environment.yml 
+
+# Make RUN commands use the new environment:
+SHELL ["conda", "run", "-n", "c_geopandas", "/bin/bash", "-c"]
+
+# Demonstrate the environment is activated:
+RUN echo "Make sure geopandas is installed:"
+RUN python -c "import geopandas"
+
