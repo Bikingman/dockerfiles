@@ -12,7 +12,7 @@ COPY environment.yml .
 RUN conda env create -f environment.yml 
 
 # Make RUN commands use the new environment:
-SHELL ["conda", "run", "-n", "roads", "/bin/bash", "-c"]
+SHELL ["conda", "run", "-n", "nhts", "/bin/bash", "-c"]
 
 ENV PYTHONPATH "${PYTHONPATH}:/src/python"
 
