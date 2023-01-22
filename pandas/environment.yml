@@ -1,0 +1,7 @@
+name: nhts
+channels:
+  - conda-forge
+dependencies:
+  - pandas 
+  - numpy 
+  - openpyxl
