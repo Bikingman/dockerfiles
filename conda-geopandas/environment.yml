@@ -1,4 +1,4 @@
-name: c_geopandas
+name: roads
 channels:
   - conda-forge
 dependencies:
@@ -6,3 +6,5 @@ dependencies:
   - numpy 
   - geopandas 
   - openpyxl
+  - wget
+  - shapely
